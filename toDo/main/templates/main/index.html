@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDO</title>
+    <!-- <link rel="stylesheet" href="sty;es/style.css"> -->
+    <link rel="stylesheet" href="{% static 'sty;es/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'sty;es/stylecheckbox.css'%}">
+</head>
+<div class="wrapper">
+    <div class="create-block">
+        <input type="text" placeholder="add a new task" class="create-input">
+        <button class="create-button">добавить</button>
+    </div>
+    <div class="todo-block">
+        <div class="todo-item">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="todo-item marked">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="todo-item done">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="todo-item marked">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="todo-item">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="todo-item done">
+            <div class="todo-item__header">
+                <label class="checkbox_container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <h4>Купить молоко</h4>
+            </div>
+            <div class="todo-item__footer">
+                <p>17.11.2020 <span>17:22</span></p>
+                <div class="action_buttons">
+                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+
+
+
+</body>
+
+</html>

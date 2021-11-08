@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #263238;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+
+.create-block {
+    width: 80%;
+}
+
+.create-input {
+    padding: 12px 5px;
+    font-size: 18px;
+    width: 80%;
+}
+.create-button {
+    padding: 12px 5px;
+    background-color: #ce93d8;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.create-button:active {
+    background-color: rgb(240, 171, 171);
+}
+.todo-block {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.todo-item {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 24%;
+    padding: 10px 15px;
+    background-color: #c8e6c9;
+    margin-bottom: 20px;
+}
+.marked {
+    background-color: yellow;
+    border: 2px solid rgb(94, 94, 0);
+}
+.done {
+    background-color: rgb(165, 165, 165);
+    text-decoration: line-through;
+    color: rgb(165, 165, 165);
+}
+.todo-item.done h4,
+.todo-item.done p,
+.todo-item.done span {
+    color: rgb(229, 226, 226);
+}
+.todo-item.done img {
+    opacity: 0.5;
+}
+.todo-item {
+}
+.todo-item__header {
+    display: flex;
+}
+.checkbox_container {
+}
+.checkmark {
+}
+.todo-item__footer {
+    display: flex;
+    justify-content: space-between;
+}
+.action_buttons {
+    display: flex;
+}
+.star {
+    width: 25px;
+    height: 25px;
+}
+.star img {
+    width: 100%;
+}
+.delete {
+    width: 25px;
+    height: 25px;
+}
+.delete img {
+    width: 100%;
+}
