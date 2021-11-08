@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDO</title>
     <!-- <link rel="stylesheet" href="sty;es/style.css"> -->
-    <link rel="stylesheet" href="{% static 'sty;es/style.css' %}">
-
-    <link rel="stylesheet" href="{% static 'sty;es/stylecheckbox.css'%}">
+    <link rel="stylesheet" href="{% static 'sty;es/style.css'%}">
+    <link rel="stylesheet" href="{% static 'sty;es/stylechecbox.css'%}">
 </head>
 <div class="wrapper">
     <div class="create-block">
@@ -20,102 +19,103 @@
     <div class="todo-block">
         <div class="todo-item">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="task">
+                    <label for="task"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
         </div>
         <div class="todo-item marked">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="tasks">
+                    <label for="tasks"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
         </div>
         <div class="todo-item done">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="taskr">
+                    <label for="taskr"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
         </div>
         <div class="todo-item marked">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="taskt">
+                    <label for="taskt"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
         </div>
         <div class="todo-item">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="tasqk">
+                    <label for="taskq"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
         </div>
         <div class="todo-item done">
             <div class="todo-item__header">
-                <label class="checkbox_container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="block_check">
+                    <input class="input" type="checkbox" name="task" id="taska">
+                    <label for="taska"><img src="{%static 'icons/check.svg'%}" alt=""></label>
+                </div>
                 <h4>Купить молоко</h4>
             </div>
             <div class="todo-item__footer">
                 <p>17.11.2020 <span>17:22</span></p>
                 <div class="action_buttons">
-                    <div class="star"><img src="{% static 'icons/second.svg'%}" alt=""></div>
-                    <div class="delete"><img src="{% static 'icons/first.svg'%}" alt=""></div>
+                    <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                    <div class="delete"><img src="{% static 'icons/hh.svg'%}" alt=""></div>
 
                 </div>
             </div>
