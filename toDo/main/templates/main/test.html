@@ -16,8 +16,11 @@
 
     <div class="wrapper">
         <div class="create-block">
-            <input type="text" placeholder="add a new task" class="create-input">
-            <button class="create-button" type="submit">добавить</button>
+            <form action="{% url 'add-todo' %}" method="post">
+                {% csrf_token%}
+                <input type="text" placeholder="add a new task" class="create-input" name="todo_text">
+                <button class="create-button" type="submit">добавить</button>
+            </form>
         </div>
         <div class="todo-block">
             {% for todo in todo_list%}
