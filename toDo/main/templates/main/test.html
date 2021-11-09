@@ -24,7 +24,9 @@
         </div>
         <div class="todo-block">
             {% for todo in todo_list%}
-            <div class="todo-item">
+            <div class="todo-item  {% if todo.is_favourate%} marked {%endif%}">
+
+
                 <div class="todo-item__header">
                     <div class="block_check">
                         <input class="input" type="checkbox" name="task" id="{{todo.text}}">
@@ -35,7 +37,14 @@
                 <div class="todo-item__footer">
                     <p>{{todo.created_at}}</p>
                     <div class="action_buttons">
-                        <div class="star"><img src="{% static 'icons/star.svg'%}" alt=""></div>
+                        {% if todo.is_favourate%}
+                        <a href="{% url 'unmark-todo' todo.id%}" class="star"><img src="{% static 'icons/star.svg'%}"
+                                alt=""></a>
+                        {%else%}
+                        <a href="{% url 'mark-todo' todo.id%}" class="star"><img src="{% static 'icons/unmarked.ico'%}"
+                                alt=""></a>
+                        {%endif%}
+
                         <a href="{% url 'delete-todo' todo.id%}" class="delete"><img src="{% static 'icons/hh.svg'%}"
                                 alt=""></a>
                     </div>
