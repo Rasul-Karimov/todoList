@@ -14,7 +14,7 @@
 <div class="wrapper">
     <div class="create-block">
         <input type="text" placeholder="add a new task" class="create-input">
-        <button class="create-button">добавить</button>
+        <button class="create-button" type="submit">добавить</button>
     </div>
     <div class="todo-block">
         <div class="todo-item">
@@ -22,7 +22,6 @@
                 <div class="block_check">
                     <input class="input" type="checkbox" name="task" id="task">
                     <label for="task"><img src="{%static 'icons/check.svg'%}" alt=""></label>
-
                 </div>
                 <h4>Купить молоко</h4>
             </div>
@@ -52,6 +51,12 @@
                 </div>
             </div>
         </div>
+        {% for el in news%}
+        <div class="alert alert-warning">
+            <h3>{{el.title}}</h3>
+            <p>{{el.anons}}</p>
+        </div>
+        {% endfor%}
         <div class="todo-item done">
             <div class="todo-item__header">
                 <div class="block_check">
@@ -89,7 +94,7 @@
         <div class="todo-item">
             <div class="todo-item__header">
                 <div class="block_check">
-                    <input class="input" type="checkbox" name="task" id="tasqk">
+                    <input class="input" type="checkbox" name="task" id="taskq">
                     <label for="taskq"><img src="{%static 'icons/check.svg'%}" alt=""></label>
                 </div>
                 <h4>Купить молоко</h4>
