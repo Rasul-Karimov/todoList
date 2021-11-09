@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
     color: #263238;
+    text-decoration: none;
 }
-
+a {
+}
 h4 {
     padding: 0 0 0 10px;
 }
@@ -75,6 +77,9 @@ h4 {
 }
 .todo-item__header {
     display: flex;
+}
+.todo-item__header h4 a {
+    text-decoration: none;
 }
 .checkbox_container {
     width: 50px;
