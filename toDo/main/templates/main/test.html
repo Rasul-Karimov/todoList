@@ -10,7 +10,11 @@
 
 <body>
     <h1>Это тестовая страница </h1>
-    привет мир
+    <p>привет мир</p>
+    {% for todo in todo_list %}
+    <h3>{{todo.text}} - {{ todo.created_at}}
+    </h3>
+    {% endfor%}
 </body>
 
 </html>
